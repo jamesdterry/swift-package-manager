@@ -15,7 +15,7 @@ import TSCTestSupport
 final class SwiftPMTests: XCTestCase {
   #if os(macOS)
     // FIXME: This is failing right now.
-    func DISABLED_testBinaryTargets() throws {
+    func testBinaryTargets() throws {
         try binaryTargetsFixture { prefix in
             do {
                 let (stdout, stderr) = try sh(swiftRun, "--package-path", prefix, "exe")
