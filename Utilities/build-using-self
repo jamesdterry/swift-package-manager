@@ -19,4 +19,4 @@ swift test -c $CONFIGURATION --parallel --enable-test-discovery
 # Run the integration tests with just built SwiftPM.
 export SWIFTPM_BIN_DIR=$(swift build -c $CONFIGURATION --show-bin-path)
 cd IntegrationTests
-$SWIFTPM_BIN_DIR/swift-test --parallel
+$SWIFTPM_BIN_DIR/swift-test --parallel --enable-test-discovery
