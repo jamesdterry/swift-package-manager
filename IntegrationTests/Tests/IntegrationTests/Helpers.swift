@@ -121,6 +121,10 @@ let swiftRun: AbsolutePath = {
     return swiftpmBinaryDirectory.appending(component: "swift-run")
 }()
 
+let isSelfHosted: Bool = {
+    return ProcessInfo.processInfo.environment["SWIFTCI_IS_SELF_HOSTED"] != nil
+}()
+
 @discardableResult
 func sh(
     _ arguments: CustomStringConvertible...,

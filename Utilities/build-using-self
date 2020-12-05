@@ -8,6 +8,7 @@ cd "${__dir}/.."
 echo "Current directory is ${PWD}"
 
 CONFIGURATION=debug
+export SWIFTCI_IS_SELF_HOSTED=1
 
 set -x
 

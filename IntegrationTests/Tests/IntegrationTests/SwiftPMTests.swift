@@ -14,7 +14,6 @@ import TSCTestSupport
 
 final class SwiftPMTests: XCTestCase {
   #if os(macOS)
-    // FIXME: This is failing right now.
     func testBinaryTargets() throws {
         try binaryTargetsFixture { prefix in
             do {
